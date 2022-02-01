@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Llistat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Casa</ion-label>
+    <ion-select placeholder="Select One" (ionChange)="filterHouse()" [(ngModel)]="casaH">
+      <ion-select-option value="Gryffindor">Gryffindor</ion-select-option>
+      <ion-select-option value="Ravenclaw">Ravenclaw</ion-select-option>
+      <ion-select-option value="Hufflepuff">Hufflepuff </ion-select-option>
+      <ion-select-option value="Slytherin">Slytherin  </ion-select-option>
+      <ion-select-option value="sense">Sense especificar </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+</ion-content>
